@@ -29,11 +29,11 @@ using namespace boost;
 using namespace boost::assign;
 using namespace json_spirit;
 
-Value getinfo(const Array& params, bool fHelp)
+Value getblockchaininfo(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() != 0)
         throw runtime_error(
-            "getinfo\n"
+            "getblockchaininfo\n"
             "Returns an object containing various state info.");
 
     proxyType proxy;
